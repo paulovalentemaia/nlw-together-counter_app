@@ -5,7 +5,12 @@ void main() {
       theme: ThemeData(primarySwatch: Colors.green), home: HomePage()));
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   var count = 0;
 
   void increment() {
@@ -19,7 +24,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Meu Primeiro App"),
       ),
-      body: Center(child: Text("Contador\n0", textAlign: TextAlign.center)),
+      body:
+          Center(child: Text("Contador\n$count", textAlign: TextAlign.center)),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
