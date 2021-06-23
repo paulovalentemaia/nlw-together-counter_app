@@ -24,8 +24,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("Meu Primeiro App"),
       ),
-      body:
-          Center(child: Text("Contador\n$count", textAlign: TextAlign.center)),
+      body: Center(
+          child: Text(
+        "Contador\n$count",
+        textAlign: TextAlign.center,
+      )),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
