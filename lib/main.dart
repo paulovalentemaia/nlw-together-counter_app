@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Container(
-      color: Colors.green.shade900,
-      child: ,
+      home: Scaffold(
+    body: Container(
+      color: Colors.purple,
+      child: Container(
+        height: 200,
+        width: 200,
+        color: Colors.green,
       ),
-  ));
+    ),
+  )));
 }
